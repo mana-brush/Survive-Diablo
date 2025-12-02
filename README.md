@@ -9,3 +9,8 @@ Day 1, 2025/12/01
 - Make github repo
 - Have rough plan
 - Simple Start Button (Multiple Scenes)
+
+Day 2, 2025/12/02
+- Finish Basic Start Menu
+- Start Player Movement
+- Stretch: Add Intermediary Scene for Act/Character Selection
