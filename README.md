@@ -6,5 +6,6 @@ This game will aim to be a vampire survivor inspired and Diablo 2 skinned game. 
 ### Dev Journal
 
 Day 1, 2025/12/01
-Make github repo
-Have rough plan
+- Make github repo
+- Have rough plan
+- Simple Start Button (Multiple Scenes)
