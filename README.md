@@ -12,5 +12,6 @@ Day 1, 2025/12/01
 
 Day 2, 2025/12/02
 - Finish Basic Start Menu
-- Start Player Movement
+- Added Player Movement
+- Centered Camera to Follow Player
 - Stretch: Add Intermediary Scene for Act/Character Selection
