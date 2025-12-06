@@ -20,3 +20,8 @@ Day 3, 2025/12/04
 - Reviewing Chunk Generation and Random Prop Generation
 - Basic Tile Painting
 - Random Prop Prefab Generation
+
+Day 4, 2025/12/05
+- Basic, basic chunk generation
+- Reworked to capture normalized direction
+- allowed octo directional movement
