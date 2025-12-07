@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 461380712}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5be97909d70d88d93000084983b3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   playerMovePoint: {fileID: 1164765800}
 --- !u!61 &461380708
 BoxCollider2D:
@@ -760,6 +760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e854dda72fbfc1d5b24aabd1d8a4893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentChunk: {fileID: 0}
   terrainChunks:
   - {fileID: 5068800464745553897, guid: 3ef7ef789c173ba22a1fa5b48ac7321a, type: 3}
   - {fileID: 5068800464745553897, guid: 853faa74ef6a131599dd93cabaf78465, type: 3}
@@ -769,6 +770,9 @@ MonoBehaviour:
   terrainMask:
     serializedVersion: 2
     m_Bits: 64
+  spawnedChunks: []
+  maxOpDist: 50
+  optimizerCooldownDuration: 1
 --- !u!4 &1607310064
 Transform:
   m_ObjectHideFlags: 0

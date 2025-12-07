@@ -438,7 +438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30c164b3ab3f58ab91fe5a341328f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapController: {fileID: 0}
   targetMap: {fileID: 5068800464745553897}
 --- !u!1 &4421381554578034054
 GameObject:
@@ -4788,6 +4787,8 @@ TilemapRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4809,6 +4810,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2086882167
   m_SortingLayer: 1
   m_SortingOrder: 0

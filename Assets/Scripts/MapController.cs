@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class MapController : MonoBehaviour
 {
 
     public GameObject currentChunk;
+    
+    [SerializeField]
     public List<GameObject> terrainChunks;
     public GameObject player;
     public float checkerRadius;
@@ -13,7 +14,6 @@ public class MapController : MonoBehaviour
     private Vector3 _noTerrainPosition;
     private PlayerMovement _pm;
     
-    [Header("Optimization")]
     public List<GameObject> spawnedChunks;
     private GameObject _latestChunk;
     public float maxOpDist;
