@@ -28,3 +28,7 @@ Day 4, 2025/12/05
 
 Day 5, 2025/12/06
 - Map optimizations
+
+Day 6, 2025/12/07
+- Minor menu placement adjustments
+- New intermediary Scene for Act Selection
