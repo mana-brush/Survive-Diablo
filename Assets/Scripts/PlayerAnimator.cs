@@ -4,30 +4,30 @@ using UnityEngine.InputSystem;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    private Animator am;
-    private PlayerMovement pm;
-    private SpriteRenderer sr;
+    private Animator _am;
+    private PlayerMovement _pm;
+    private SpriteRenderer _sr;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        am = GetComponent<Animator>();
-        pm = GetComponent<PlayerMovement>();
-        sr = GetComponent<SpriteRenderer>();
+        _am = GetComponent<Animator>();
+        _pm = GetComponent<PlayerMovement>();
+        _sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        InputAction moveAction = pm.GetMoveAction();
+        InputAction moveAction = _pm.GetMoveAction();
         if (moveAction.inProgress)
         {
-            am.SetBool("Move", true);
+            _am.SetBool("Move", true);
             SpriteDirectionChecker(moveAction);
         }
         else
         {
-            am.SetBool("Move", false);
+            _am.SetBool("Move", false);
         }
     }
 
@@ -36,11 +36,11 @@ public class PlayerAnimator : MonoBehaviour
         Vector2 direction = moveAction.ReadValue<Vector2>();
         if (direction.x > 0)
         {
-            sr.flipX = false;
+            _sr.flipX = false;
         }
         else
         {
-            sr.flipX = true;
+            _sr.flipX = true;
         }
 
     }

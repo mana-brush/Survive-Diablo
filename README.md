@@ -33,3 +33,4 @@ Day 6, 2025/12/07
 - Minor menu placement adjustments
 - New intermediary Scene for Act Selection
 - Small menu system to get out of Acts
+- Scrapped current acts for simple Wave Spawner Game 
