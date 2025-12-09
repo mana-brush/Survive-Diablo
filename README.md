@@ -39,3 +39,6 @@ Day 7, 2025/12/08
 - Simple barbarian attack animation, idle bouncing
 - Trigger animation on Enter Key
 - Small Act 1 map edits
+
+Day 8, 2025/12/09
+- Fixed movement getting stuck in collision layer

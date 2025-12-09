@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private LayerMask obstacleLayer;
     [SerializeField] private float speed = 5f;
     [SerializeField] private Transform playerMovePoint;
     
@@ -22,16 +23,17 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, playerMovePoint.position, speed * Time.deltaTime);
-
-        if (Mathf.Approximately(Vector3.Distance(transform.position, playerMovePoint.position), Zero))
+        if (Vector3.Distance(transform.position, playerMovePoint.position) <= 0.05f)
         {
-            if (_moveAction.inProgress)
+            Vector2 direction = _moveAction.ReadValue<Vector2>();
+            if (!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(direction.x, direction.y, Zero), .2f,
+                    obstacleLayer))
             {
-                Vector2 direction = _moveAction.ReadValue<Vector2>();
                 playerMovePoint.position += new Vector3(direction.x, direction.y, Zero);
                 _moveDirection = new Vector2(direction.normalized.x, direction.normalized.y);
             }
         }
+        
     }
     
     public InputAction GetMoveAction() => _moveAction;

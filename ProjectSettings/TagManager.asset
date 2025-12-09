@@ -13,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Terrain
-  - 
+  - Obstacles
   - 
   - 
   - 
@@ -44,6 +44,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2086882167
+    locked: 0
+  - name: Obstacles
+    uniqueID: 1446443265
     locked: 0
   - name: Background Objects
     uniqueID: 227777089
