@@ -34,3 +34,8 @@ Day 6, 2025/12/07
 - New intermediary Scene for Act Selection
 - Small menu system to get out of Acts
 - Scrapped current acts for simple Wave Spawner Game 
+
+Day 7, 2025/12/08
+- Simple barbarian attack animation, idle bouncing
+- Trigger animation on Enter Key
+- Small Act 1 map edits
