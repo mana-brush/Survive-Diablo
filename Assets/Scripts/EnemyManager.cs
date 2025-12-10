@@ -3,20 +3,10 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        Debug.Log(collision.gameObject.name);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        Debug.Log(collider.gameObject.name);
-    }
 }

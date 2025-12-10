@@ -43,3 +43,4 @@ Day 7, 2025/12/08
 Day 8, 2025/12/09
 - Fixed movement getting stuck in collision layer
 - Rotation to Cursor (for attacking)
+- Basic enemy spawner and movement
