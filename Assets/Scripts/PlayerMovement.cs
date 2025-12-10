@@ -9,14 +9,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform playerMovePoint;
     
     private InputAction _moveAction;
+    private InputAction _cursorAction;
     private const float Zero = 0f;
     private Vector2 _moveDirection; 
+    private Camera _mainCamera;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerMovePoint.parent = null; // just a child for organization, clearing to remove side effects
         _moveAction = InputSystem.actions["Move"];
+        _cursorAction = InputSystem.actions["Point"];
+        _mainCamera = Camera.main;
     }
 
     // Update is called once per frame
@@ -33,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
                 _moveDirection = new Vector2(direction.normalized.x, direction.normalized.y);
             }
         }
+
+        Vector2 cursorPosition = _mainCamera.ScreenToWorldPoint(_cursorAction.ReadValue<Vector2>());
+        float angle = Mathf.Atan2(cursorPosition.y - transform.position.y, cursorPosition.x - transform.position.x);
+        float angleDeg = (180 / Mathf.PI) * angle - 90;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angleDeg));
         
     }
     

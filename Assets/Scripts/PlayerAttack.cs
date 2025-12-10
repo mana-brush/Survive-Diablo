@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         _attackKey = InputSystem.actions["Attack"];
-        _animator = GetComponent<Animator>();
+        //_animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
         heroAttackPoint.SetActive(isAttacking);
         if (isAttacking)
         {
-            _animator.Play("HeroAttack");
+            //_animator.Play("HeroAttack");
         }
     }
     
