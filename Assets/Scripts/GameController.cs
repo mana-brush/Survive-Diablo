@@ -34,4 +34,9 @@ public class GameController : MonoBehaviour
         _wasEscapePressed = false;
         escapeScreen.SetActive(false);
     }
+
+    public void SpawnCaveToNextLevel(int level)
+    {
+        // load scene with cave
+    }
 }

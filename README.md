@@ -44,3 +44,7 @@ Day 8, 2025/12/09
 - Fixed movement getting stuck in collision layer
 - Rotation to Cursor (for attacking)
 - Basic enemy spawner and movement
+
+Day 9, 2025/12/10
+- Added enemy health and health bars
+- Static Damage
