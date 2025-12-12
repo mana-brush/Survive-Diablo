@@ -5,6 +5,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public float speed;
     private Transform _player;
+    private bool _isAggrod = false;
 
     void Start()
     {
@@ -14,6 +15,25 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _player.position, speed * Time.deltaTime);
+        if (_isAggrod)
+        { 
+            transform.position = Vector3.MoveTowards(transform.position, _player.position, speed * Time.deltaTime);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            _isAggrod = true;
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            _isAggrod = false;
+        }
     }
 }
