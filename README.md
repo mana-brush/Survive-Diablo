@@ -48,3 +48,8 @@ Day 8, 2025/12/09
 Day 9, 2025/12/10
 - Added enemy health and health bars
 - Static Damage
+
+Day 10, 2025/12/11
+- Den of Evil
+- Enemy Aggro Radius (WIP)
+- Scene management
