@@ -1,26 +1,10 @@
-using System;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed;
-    private Transform _player;
-    private bool _isAggrod = false;
-
-    void Start()
-    {
-        _player = GameObject.FindGameObjectWithTag("Player").transform;
-    }
     
-    // Update is called once per frame
-    void Update()
-    {
-        if (_isAggrod)
-        { 
-            transform.position = Vector3.MoveTowards(transform.position, _player.position, speed * Time.deltaTime);
-        }
-    }
-
+    private bool _isAggrod;
+        
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -35,5 +19,10 @@ public class EnemyMovement : MonoBehaviour
         {
             _isAggrod = false;
         }
+    }
+
+    public bool IsAggrod()
+    {
+        return _isAggrod;
     }
 }

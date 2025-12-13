@@ -53,3 +53,8 @@ Day 10, 2025/12/11
 - Den of Evil
 - Enemy Aggro Radius (WIP)
 - Scene management
+
+Day 11, 2025/12/13
+- Reworked movement collision 
+- Added enemy movepoint
+- Updated prefab models ( need to make "core" enemy and boss prefabs )
