@@ -208,7 +208,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 368608375436887758}
---- !u!1 &7468008379912296432
+--- !u!1 &6268899129069159715
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,42 +216,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1113756608754771881}
-  - component: {fileID: 7880046574755969360}
-  - component: {fileID: 1835542921995961481}
-  - component: {fileID: 3766513004444824336}
-  - component: {fileID: 3196547949961637473}
+  - component: {fileID: 3353752480257764221}
+  - component: {fileID: 6292075227055610601}
   m_Layer: 0
-  m_Name: Fallen
-  m_TagString: Enemy
+  m_Name: Sprite
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1113756608754771881
+--- !u!4 &3353752480257764221
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7468008379912296432}
+  m_GameObject: {fileID: 6268899129069159715}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 473256776795890737}
-  - {fileID: 7635803843111151683}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 1113756608754771881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7880046574755969360
+--- !u!212 &6292075227055610601
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7468008379912296432}
+  m_GameObject: {fileID: 6268899129069159715}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -293,16 +288,53 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7357955, g: 0.21089722, b: 0.18973285, a: 1}
+  m_Color: {r: 0.7372549, g: 0.21176471, b: 0.1882353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &7468008379912296432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113756608754771881}
+  - component: {fileID: 1835542921995961481}
+  - component: {fileID: 3766513004444824336}
+  - component: {fileID: 3196547949961637473}
+  m_Layer: 0
+  m_Name: Fallen
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1113756608754771881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7468008379912296432}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 473256776795890737}
+  - {fileID: 7635803843111151683}
+  - {fileID: 3353752480257764221}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1835542921995961481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -388,10 +420,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dc5653b43c7f57ff86433c5711b0a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  spriteRenderer: {fileID: 6292075227055610601}
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 735415646068114269}
-  enemyMovepoint: {fileID: 7582213937913355487}
+  enemyMovePoint: {fileID: 7582213937913355487}
   speed: 2
 --- !u!1 &7523969835286580185
 GameObject:
@@ -563,7 +596,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 4.5
+  m_Radius: 6
 --- !u!114 &7582213937913355487
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -58,3 +58,7 @@ Day 11, 2025/12/13
 - Reworked movement collision 
 - Added enemy movepoint
 - Updated prefab models ( need to make "core" enemy and boss prefabs )
+
+Day 12, 2025/12/14
+- Flash effect on enemies
+- Re-organized enemy prefabs

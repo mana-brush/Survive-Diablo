@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, playerMovePoint.position, speed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, playerMovePoint.position) <= 0.05f)
+        if (Vector3.Distance(transform.position, playerMovePoint.position) <= 0.1f)
         {
             Vector2 direction = _moveAction.ReadValue<Vector2>();
             if (!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(direction.x, direction.y, Zero), .2f,

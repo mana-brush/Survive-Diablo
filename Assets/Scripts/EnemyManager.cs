@@ -1,30 +1,48 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class EnemyManager : MonoBehaviour
 {
 
+    public SpriteRenderer spriteRenderer;
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
-    public EnemyMovement enemyMovepoint;
+    public EnemyMovement enemyMovePoint;
     public float speed;
+
+    private bool _isDead;
     private Transform _player;
+
+    private Color _originalColor;
+    private Color _flashColor = Color.white;
+    private float _flashDuration = 0.1f;
     
     void Start()
     {
-        enemyMovepoint.transform.parent = null;
+        enemyMovePoint.transform.parent = null;
         _player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        if (spriteRenderer != null)
+        {
+            _originalColor = spriteRenderer.color;
+        }
+        
     }
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, enemyMovepoint.transform.position, speed * Time.deltaTime);
         
-        if (enemyMovepoint.IsAggrod())
+        if (_isDead) return;
+        
+        transform.position = Vector3.MoveTowards(transform.position, enemyMovePoint.transform.position, speed * Time.deltaTime);
+        
+        if (enemyMovePoint.IsAggrod())
         { 
-            enemyMovepoint.transform.position = Vector3.MoveTowards(enemyMovepoint.transform.position, _player.position, speed * Time.deltaTime);
+            enemyMovePoint.transform.position = Vector3.MoveTowards(enemyMovePoint.transform.position, _player.position, speed * Time.deltaTime);
         }
     }
 
@@ -32,10 +50,10 @@ public class EnemyManager : MonoBehaviour
     {
         if (collision.gameObject.name == "Hero")
         {
-            TakeDamage(33);
+            TakeDamage(50);
             if (currentHealth <= 0)
             {
-                Destroy(gameObject); // Destroy self
+                _isDead = true;
             }
         }
     }
@@ -44,6 +62,23 @@ public class EnemyManager : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (spriteRenderer != null)
+        {
+            StartCoroutine(FlashEffect());
+        }
     }
 
+    private IEnumerator FlashEffect()
+    {
+        spriteRenderer.color = _flashColor;
+        yield return new WaitForSeconds(_flashDuration);
+        spriteRenderer.color = _originalColor;
+    }
+
+    public void Revive()
+    {
+        _isDead = false;
+        currentHealth = maxHealth / 2;
+    }
+    
 }
