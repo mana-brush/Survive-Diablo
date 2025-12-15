@@ -63,3 +63,4 @@ Day 12, 2025/12/14
 - Flash effect on enemies
 - Re-organized enemy prefabs
 - User and Enemy namespaces
+- Map manager / scene loading

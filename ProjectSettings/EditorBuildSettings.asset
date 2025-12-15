@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Act 1/Act 1 - Blood Moor.unity
     guid: 66a662c325ccedf6cb30e9f7961ccb3c
   - enabled: 1
+    path: Assets/Scenes/Act 1/Act 1 - Den of Evil.unity
+    guid: e610237d0409d87289109d875c345e90
+  - enabled: 1
     path: Assets/Scenes/Act 2/Act 2.unity
     guid: d1b87eb80aad66607972bf266153147d
   m_configObjects:

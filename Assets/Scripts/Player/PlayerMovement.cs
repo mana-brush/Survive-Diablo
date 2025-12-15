@@ -53,6 +53,7 @@ namespace Player
         public InputAction GetMoveAction() => _moveAction;
 
         public Vector2 GetMoveDirection() => _moveDirection;
+
     }
 
 }
