@@ -62,3 +62,4 @@ Day 11, 2025/12/13
 Day 12, 2025/12/14
 - Flash effect on enemies
 - Re-organized enemy prefabs
+- User and Enemy namespaces
