@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Act 1/Act 1 - Cold Plains.unity
     guid: 92538c50c124f9bdebcce9fca62772e6
   - enabled: 1
+    path: Assets/Scenes/Act 1/Act 1 - Passage To Blood Raven.unity
+    guid: 43e4635eb9844c88394bbff0170dc7ad
+  - enabled: 1
+    path: Assets/Scenes/Act 1/Act 1 - Burial Grounds.unity
+    guid: 81a859a7e580ad8a4937f7b1ee95d70d
+  - enabled: 1
     path: Assets/Scenes/Act 2/Act 2.unity
     guid: d1b87eb80aad66607972bf266153147d
   m_configObjects:
