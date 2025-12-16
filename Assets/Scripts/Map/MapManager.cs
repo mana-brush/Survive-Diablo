@@ -8,12 +8,13 @@ namespace Map
     public class MapManager : MonoBehaviour
     {
     
-        private readonly int BloodMoorSceneIndex = 2;
-        private readonly int DenOfEvilSceneIndex = 3;
+        private readonly int _townSceneIndex = 2;
+        private readonly int _bloodMoorSceneIndex = 3;
+        private readonly int _denOfEvilSceneIndex = 4;
+        private readonly int _coldPlainsSceneIndex = 5;
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log(other.gameObject.name);
             if (!other.CompareTag("Player"))
             {
                 return;
@@ -22,20 +23,22 @@ namespace Map
             if (gameObject.name == "Tilemap_LoadTown")
             {
                 Debug.Log("Load Town");
+                SceneManager.LoadSceneAsync(_townSceneIndex);
             }
             else if (gameObject.name == "Tilemap_LoadBloodMoor")
             {
                 Debug.Log("Load Blood Moor");
-                SceneManager.LoadScene(BloodMoorSceneIndex);
+                SceneManager.LoadSceneAsync(_bloodMoorSceneIndex);
             }
             else if (gameObject.name == "Tilemap_LoadDenOfEvil")
             {
                 Debug.Log("Load Den Of Evil");
-                SceneManager.LoadScene(DenOfEvilSceneIndex);
+                SceneManager.LoadSceneAsync(_denOfEvilSceneIndex);
             } 
             else if (gameObject.name == "Tilemap_LoadColdPlains")
             {
                 Debug.Log("Load Cold Plains");
+                SceneManager.LoadSceneAsync(_coldPlainsSceneIndex);
             }
         }
     }

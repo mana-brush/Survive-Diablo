@@ -64,3 +64,9 @@ Day 12, 2025/12/14
 - Re-organized enemy prefabs
 - User and Enemy namespaces
 - Map manager / scene loading
+
+Day 13, 2025/12/15
+- Encampment Added
+- Cold Plains Added
+- More Scene Transitions 
+- NPC Placeholders

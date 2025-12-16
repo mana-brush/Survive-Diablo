@@ -1,12 +1,10 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 
 namespace Enemy
 {
-    public class EnemyManager : MonoBehaviour
+    public class Enemy : MonoBehaviour
     {
 
         public SpriteRenderer spriteRenderer;
