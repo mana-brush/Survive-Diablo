@@ -1,7 +1,7 @@
 # Survive Diablo 
 
 ### Summary
-This game will aim to be a vampire survivor inspired and Diablo 2 skinned game. I have generally tried to replicate old existing game patterns, and this will be what I consider my first project into game development.
+This game will aim to be a top down (Zelda like) adventure inspired and Diablo 2 skinned game. I have generally tried to replicate old existing game patterns, and this will be what I consider my first project into game development.
 
 ### Dev Journal
 
