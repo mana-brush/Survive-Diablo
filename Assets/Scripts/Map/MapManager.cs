@@ -7,7 +7,7 @@ namespace Map
     
     public class MapManager : MonoBehaviour
     {
-    
+        
         private readonly int _townSceneIndex = 2;
         private readonly int _bloodMoorSceneIndex = 3;
         private readonly int _denOfEvilSceneIndex = 4;
@@ -49,6 +49,11 @@ namespace Map
                     SceneManager.LoadSceneAsync(_burialGroundsSceneIndex);
                     break;
             }
+        }
+
+        public void LoadTown()
+        {
+            SceneManager.LoadSceneAsync(_townSceneIndex);
         }
     }
 }

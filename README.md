@@ -70,3 +70,6 @@ Day 13, 2025/12/15
 - Cold Plains Added
 - More Scene Transitions 
 - NPC Placeholders
+
+Day 14, 2025/12/16
+- Simple Waypoint Canvas / Functionality 
