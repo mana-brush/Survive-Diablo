@@ -5136,12 +5136,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5581256781646976482, guid: a78244b3efb4face3b669c52c4a5f063, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581256781646976482, guid: a78244b3efb4face3b669c52c4a5f063, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5581256781646976482, guid: a78244b3efb4face3b669c52c4a5f063, type: 3}
       propertyPath: m_EdgeRadius
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6698249380165600914, guid: a78244b3efb4face3b669c52c4a5f063, type: 3}
       propertyPath: m_Name

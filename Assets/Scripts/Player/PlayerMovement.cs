@@ -14,7 +14,6 @@ namespace Player
         private InputAction _moveAction;
         private InputAction _cursorAction;
         private const float Zero = 0f;
-        private Vector2 _moveDirection;
         private Camera _mainCamera;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,7 +30,7 @@ namespace Player
         {
             transform.position =
                 Vector3.MoveTowards(transform.position, playerMovePoint.position, speed * Time.deltaTime);
-            if (Vector3.Distance(transform.position, playerMovePoint.position) <= 0.1f)
+            if (Vector3.Distance(transform.position, playerMovePoint.position) <= 0.05f)
             {
                 Vector2 direction = _moveAction.ReadValue<Vector2>();
                 if (!Physics2D.OverlapCircle(playerMovePoint.position + new Vector3(direction.x, direction.y, Zero),
@@ -39,7 +38,6 @@ namespace Player
                         obstacleLayer))
                 {
                     playerMovePoint.position += new Vector3(direction.x, direction.y, Zero);
-                    _moveDirection = new Vector2(direction.normalized.x, direction.normalized.y);
                 }
             }
 
@@ -51,8 +49,6 @@ namespace Player
         }
 
         public InputAction GetMoveAction() => _moveAction;
-
-        public Vector2 GetMoveDirection() => _moveDirection;
 
     }
 

@@ -73,3 +73,7 @@ Day 13, 2025/12/15
 
 Day 14, 2025/12/16
 - Simple Waypoint Canvas / Functionality 
+
+Day 15, 2025/12/19
+- Simple Audio PointerEnter Audio
+- Imported Audio
