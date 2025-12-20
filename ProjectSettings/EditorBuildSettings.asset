@@ -12,22 +12,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Select.unity
     guid: fabfaf51a90c1fe41a891f316f7ffd1d
   - enabled: 1
-    path: Assets/Scenes/Act 1/Act 1 - Rogue Encampment.unity
+    path: Assets/Scenes/Act 1/Rogue Encampment.unity
     guid: 3bb5a7b33a7d8c4de81d0268b133f2ac
   - enabled: 1
-    path: Assets/Scenes/Act 1/Act 1 - Blood Moor.unity
+    path: Assets/Scenes/Act 1/Blood Moor.unity
     guid: 66a662c325ccedf6cb30e9f7961ccb3c
   - enabled: 1
-    path: Assets/Scenes/Act 1/Act 1 - Den of Evil.unity
+    path: Assets/Scenes/Act 1/Den of Evil.unity
     guid: e610237d0409d87289109d875c345e90
   - enabled: 1
-    path: Assets/Scenes/Act 1/Act 1 - Cold Plains.unity
+    path: Assets/Scenes/Act 1/Cold Plains.unity
     guid: 92538c50c124f9bdebcce9fca62772e6
   - enabled: 1
-    path: Assets/Scenes/Act 1/Act 1 - Passage To Blood Raven.unity
+    path: Assets/Scenes/Act 1/Passage To Blood Raven.unity
     guid: 43e4635eb9844c88394bbff0170dc7ad
   - enabled: 1
-    path: Assets/Scenes/Act 1/Act 1 - Burial Grounds.unity
+    path: Assets/Scenes/Act 1/Burial Grounds.unity
     guid: 81a859a7e580ad8a4937f7b1ee95d70d
   - enabled: 1
     path: Assets/Scenes/Act 2/Act 2.unity
