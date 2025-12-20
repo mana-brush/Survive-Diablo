@@ -77,3 +77,7 @@ Day 14, 2025/12/16
 Day 15, 2025/12/19
 - Simple Audio PointerEnter Audio
 - Imported Audio
+
+Day 16, 2025/12/20
+- Waiting Audio (BB82DABN) added
+- build 003 to test
