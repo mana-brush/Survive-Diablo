@@ -16,10 +16,5 @@ public class LevelSelectMenu : MonoBehaviour
     {
         SceneManager.LoadScene(Act2Index);
     }
-    
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
 
 }
