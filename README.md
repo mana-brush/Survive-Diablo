@@ -82,3 +82,7 @@ Day 16, 2025/12/20
 - Waiting Audio (BB82DABN) added
 - build 003 to test
 - Cold Plains Scene Placeholders + Dungeon Music 
+
+
+Day 17, 2025/12/21
+- Small Recording of Gameplay so far
