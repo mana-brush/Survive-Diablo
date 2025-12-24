@@ -7,6 +7,10 @@ namespace Player
 {
     public class PlayerMovement : MonoBehaviour
     {
+
+        public SpriteRenderer spriteRenderer;
+        public Sprite N, E, S, W; 
+        
         [SerializeField] private LayerMask obstacleLayer;
         [SerializeField] private float speed = 5f;
         [SerializeField] private Transform playerMovePoint;
@@ -45,7 +49,22 @@ namespace Player
             float angle = Mathf.Atan2(cursorPosition.y - transform.position.y, cursorPosition.x - transform.position.x);
             float angleDeg = (180 / Mathf.PI) * angle - 90;
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angleDeg));
+            
+            if (angle < 0) angle += 360; 
 
+            // Divide the full circle (360) into 8 steps (45 degrees each)
+            float step = 45f;
+        
+            // Determine which direction slice the angle falls into
+            if (angle < step / 2f || angle >= 360f - step / 2f) spriteRenderer.sprite = E; // Right
+            else if (angle < step * 2.5f) spriteRenderer.sprite = N; // Up
+            else if (angle < step * 4.5f)
+            {
+                spriteRenderer.sprite = W; // Left
+                spriteRenderer.flipX = true;
+            }
+            else if (angle < step * 6.5f) spriteRenderer.sprite = S; // Down
+            
         }
 
         public InputAction GetMoveAction() => _moveAction;

@@ -86,3 +86,6 @@ Day 16, 2025/12/20
 
 Day 17, 2025/12/21
 - Small Recording of Gameplay so far
+
+Day 18, 2025/12/23
+- Small usage of sprites ; playing around with rotation / sizing

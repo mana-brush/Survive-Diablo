@@ -266,7 +266,7 @@ SpriteRenderer:
   m_SortingLayerID: -1545937729
   m_SortingLayer: 7
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -274,7 +274,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5633251480612136886
@@ -289,6 +289,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5be97909d70d88d93000084983b3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  spriteRenderer: {fileID: 1457487130116040721}
+  N: {fileID: 1871739406167786269, guid: 4a917794da8d3b24dba6ee17c70a9e8d, type: 3}
+  E: {fileID: -2023923573111878767, guid: 4a917794da8d3b24dba6ee17c70a9e8d, type: 3}
+  S: {fileID: 4334783836991956000, guid: 4a917794da8d3b24dba6ee17c70a9e8d, type: 3}
+  W: {fileID: -2023923573111878767, guid: 4a917794da8d3b24dba6ee17c70a9e8d, type: 3}
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -372,7 +377,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9375, y: 1.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
